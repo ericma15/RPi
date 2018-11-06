@@ -5,7 +5,22 @@
 
 ### Check version
 **pi@rpi3Bplus:~ $ uname -a**
+
 Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
+
+### Install QT5.7
+    sudo apt-get install qt5-default
+    sudo apt-get install qtcreator
+  
+#### Qt Tool Chain Settings
+  go to Tools -> Options..-> Build & Run -> Compilers tab. click in "Add -> GCC". 
+  On "Compiler Path" set to "/home/<you>/opt/gcc-4.7-linaro-rpi-gnueabihf/bin/arm-linux-gnueabihf-g+". 
+  Name it "ARM GCC" or similar. 
+
+#### Qt Version settings.
+  go to Tools -> Options..-> Build & Run -> Qt Versions tab. 
+  Click in "Add.." and choose you qmake for raspberry "/usr/local/qt5pi/bin/qmake".
+
 
 ### Install ROS melodic
   
@@ -30,18 +45,4 @@ Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Lin
     source ~/catkin_workspace/devel/setup.bash
     echo 'source ~/catkin_workspace/devel/setup.bash' >> ~/.bashrc
     export | grep ROS
-  
-### Install QT5.7
-    sudo apt-get install qt5-default
-    sudo apt-get install qtcreator
-  
-#### Qt Tool Chain Settings
-  go to Tools -> Options..-> Build & Run -> Compilers tab. click in "Add -> GCC". 
-  On "Compiler Path" set to "/home/<you>/opt/gcc-4.7-linaro-rpi-gnueabihf/bin/arm-linux-gnueabihf-g+". 
-  Name it "ARM GCC" or similar. 
-
-#### Qt Version settings.
-  go to Tools -> Options..-> Build & Run -> Qt Versions tab. 
-  Click in "Add.." and choose you qmake for raspberry "/usr/local/qt5pi/bin/qmake".
-
 
