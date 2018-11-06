@@ -8,6 +8,9 @@
 **pi@rpi3Bplus:~ $ uname -a**
 
 Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
+**pi@rpi3Bplus:~ $ lsb_release -a**
+
+
 
 ### Install QT5.7
     sudo apt-get install qt5-default
