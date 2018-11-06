@@ -32,3 +32,11 @@
     sudo apt-get install qt5-default
     sudo apt-get install qtcreator
   
+### To use Qt Creator properly, you must configure the "Qt Version" and "Tool Chains" sections.
+#### Tool Chain Settings
+    go to Tools -> Options..-> Build & Run -> Compilers tab. click in "Add -> GCC". On "Compiler Path" set to         "/home/<you>/opt/gcc-4.7-linaro-rpi-gnueabihf/bin/arm-linux-gnueabihf-g+". Name it "ARM GCC" or similar. 
+
+#### Qt Version settings.
+    go to Tools -> Options..-> Build & Run -> Qt Versions tab. Click in "Add.." and choose you qmake for raspberry "/usr/local/qt5pi/bin/qmake".
+
+
