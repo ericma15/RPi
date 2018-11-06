@@ -1,5 +1,6 @@
 # RPi
 >install ROS Melodic (Debian): http://wiki.ros.org/melodic/Installation/Debian
+    http://asukiaaa.blogspot.com/2018/06/raspberry-pi-raspbianstretchrosmelodic.html
 
 >install QT: Rasbian default package
 
