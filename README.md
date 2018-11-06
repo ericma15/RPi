@@ -1,5 +1,5 @@
 # RPi
->install ROS: https://www.intorobotics.com/how-to-install-ros-kinetic-on-raspberry-pi-3-running-raspbian-stretch-lite/
+>install ROS Melodic (Debian): http://wiki.ros.org/melodic/Installation/Debian
 
 >install QT: Rasbian default package
 
