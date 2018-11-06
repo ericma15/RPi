@@ -23,6 +23,15 @@ Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Lin
 
 
 ### Install ROS melodic
+Open “/etc/dphys–swapfile” using “sudo nano”, edit CONF_SWAPSIZE variable (change 100MB to 1024MB):
+    ...
+    # CONF_SWAPSIZE=100
+    CONF_SWAPSIZE=1024
+Now we need to activate new swap space:
+
+    $ sudo /etc/init.d/dphys-swapfile stop
+    $ sudo /etc/init.d/dphys-swapfile start
+Note: After installing ROS, MUST change swap space from 1024 to 100.
   
     sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
     wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
