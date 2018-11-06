@@ -37,12 +37,13 @@ Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Lin
     sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/melodic -j2
     source /opt/ros/melodic/setup.bash
     echo 'source /opt/ros/melodic/setup.bash' >> ~/.bashrc
-    mkdir -p ~/catkin_workspace/src
-    cd catkin_workspace/src
+    
+    mkdir -p ~/catkin_ws/src
+    cd catkin_ws/src
     catkin_init_workspace
-    cd ~/catkin_workspace/
+    cd ~/catkin_ws/
     catkin_make
-    source ~/catkin_workspace/devel/setup.bash
-    echo 'source ~/catkin_workspace/devel/setup.bash' >> ~/.bashrc
+    source ~/catkin_ws/devel/setup.bash
+    echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc
     export | grep ROS
 
