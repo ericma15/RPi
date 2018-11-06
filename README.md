@@ -3,6 +3,10 @@
 
 >install QT: Rasbian default package
 
+### Check version
+**pi@rpi3Bplus:~ $ uname -a**
+Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
+
 ### Install ROS melodic
   
     sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
