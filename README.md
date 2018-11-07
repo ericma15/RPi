@@ -6,13 +6,13 @@
 
 ### Change RPi's swapfile size
 
-Open “/etc/dphys–swapfile” using “sudo nano”, edit CONF_SWAPSIZE variable (change 100MB to 1024MB/2048MB):
+$ sudo nano etc/dphys–swapfile; edit CONF_SWAPSIZE variable (change 100MB to 1024MB):
     
     ...
     # CONF_SWAPSIZE=100
     CONF_SWAPSIZE=1024
     
-Now we need to activate new swap space:
+Restart new swap space and check memory:
 
     $ sudo /etc/init.d/dphys-swapfile stop
     $ sudo /etc/init.d/dphys-swapfile start
@@ -26,10 +26,14 @@ Now we need to activate new swap space:
 ### Check version
 **pi@rpi3Bplus:~ $ uname -a**
 
-Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
+    Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
 
 **pi@rpi3Bplus:~ $ lsb_release -a**
 
+    Distributor ID:	Raspbian
+    Description:	Raspbian GNU/Linux 9.4 (stretch)
+    Release:	9.4
+    Codename:	stretch
 
 
 ### Install QT5.7
