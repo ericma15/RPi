@@ -36,6 +36,7 @@ Restart new swap space and check memory:
     Codename:	stretch
 
 ### Install QT5 required packages
+   
    autotools-dev bison build-essential default-libmysqlclient-dev dpkg-dev firebird-dev flex freetds-dev 
    gstreamer1.0-alsa gstreamer1.0-libav gstreamer1.0-omx gstreamer1.0-omx-rpi gstreamer1.0-omx-rpi-config gstreamer1.0-plugins-bad gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-x icu-devtools libasound2-dev libatk1.0-dev libatk-bridge2.0-dev libassimp-dev libatspi2.0-dev libaudit-dev libavcodec-dev libavformat-dev 
    libbison-dev libbsd-dev libc6-dev libcairo2-dev libcap-ng-dev libbluetooth-dev libc-dev-bin libcups2-dev libcupsimage2-dev      libclang-dev libdbus-1-dev libdevmapper-dev libdmx-dev libdouble-conversion-dev libdrm-dev libegl1-mesa-dev libepoxy-dev     libexpat1-dev libfontconfig1-dev libfontenc-dev libfreetype6-dev libgbm-dev libgcc-6-dev libgcrypt20-dev libgdk-pixbuf2.0-dev    libgl1-mesa-dev libgles2-mesa-dev libglib2.0-dev libglu1-mesa-dev libgmp-dev libgpg-error-dev libgraphite2-dev 
