@@ -7,18 +7,20 @@
 ### Change RPi's swapfile size
 
 Open “/etc/dphys–swapfile” using “sudo nano”, edit CONF_SWAPSIZE variable (change 100MB to 1024MB/2048MB):
+    
     ...
     # CONF_SWAPSIZE=100
     CONF_SWAPSIZE=1024
+    
 Now we need to activate new swap space:
 
     $ sudo /etc/init.d/dphys-swapfile stop
     $ sudo /etc/init.d/dphys-swapfile start
     $ free -m
-      >
-      >
-      >
-    
+    pi@raspberrypi:~ $ free -m
+                  total        used        free      shared  buff/cache   available
+    Mem:            927         228         269          34         429         643
+    Swap:          1023           0        1023
     
 
 ### Check version
