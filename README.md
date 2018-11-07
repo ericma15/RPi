@@ -4,6 +4,23 @@
 
 >install QT: Rasbian default package
 
+### Change RPi's swapfile size
+
+Open “/etc/dphys–swapfile” using “sudo nano”, edit CONF_SWAPSIZE variable (change 100MB to 1024MB/2048MB):
+    ...
+    # CONF_SWAPSIZE=100
+    CONF_SWAPSIZE=1024
+Now we need to activate new swap space:
+
+    $ sudo /etc/init.d/dphys-swapfile stop
+    $ sudo /etc/init.d/dphys-swapfile start
+    $ free -m
+      >
+      >
+      >
+    
+    
+
 ### Check version
 **pi@rpi3Bplus:~ $ uname -a**
 
