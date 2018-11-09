@@ -42,6 +42,12 @@ Restart new swap space and check memory:
     build-qt.sh
     build-qtcreator.sh
 
+### To download Qt5 doc and exampes:
+
+    http://ftp5.gwdg.de/pub/linux/archlinux/extra/os/x86_64//qt5-doc-5.11.2-1-any.pkg.tar.xz
+    http://ftp5.gwdg.de/pub/linux/archlinux/extra/os/x86_64//qt5-examples-5.11.2-1-any.pkg.tar.xz
+    
+    
   
 #### Qt Tool Chain Settings
   go to Tools -> Options..-> Build & Run -> Compilers tab. click in "Add -> GCC". 
