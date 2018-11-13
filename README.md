@@ -3,10 +3,6 @@
 >Reference: https://github.com/tranter/raspberry-pi-qt-builds
 
 ### Check version 
-    $sudo rpi-update
-    $uname -a
-        Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
-
     $sudo apt update
     $sudo apt upgrade
     $lsb_release -a
@@ -15,6 +11,10 @@
         Release:	9.4
         Codename:	stretch
     
+    $sudo rpi-update
+    $uname -a
+        Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
+
     
 
 ### Download and install prebuild Qt5.11.2 (minimum)
