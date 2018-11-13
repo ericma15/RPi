@@ -3,14 +3,17 @@
 >Reference: https://github.com/tranter/raspberry-pi-qt-builds
 
 ### Check version 
-**pi@rpi3Bplus:~ $ uname -a** (after sudo rpi-update)
-    Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
+    $sudo rpi-update
+    $uname -a
+        Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
 
-**pi@rpi3Bplus:~ $ lsb_release -a** (after sudo apt update/upgrade)
-    Distributor ID:	Raspbian
-    Description:	Raspbian GNU/Linux 9.4 (stretch)
-    Release:	9.4
-    Codename:	stretch
+    $sudo apt update
+    $sudo apt upgrade
+    $lsb_release -a
+        Distributor ID:	Raspbian
+        Description:	Raspbian GNU/Linux 9.4 (stretch)
+        Release:	9.4
+        Codename:	stretch
     
     
 
