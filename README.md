@@ -26,7 +26,7 @@
     sudo tar xvf /home/pi/Qt5.11.2-RaspberryPi3-bin-full.tgz
     sudo tar xvf /home/pi/QtCreator4.7.2-Qt5.11.2-RaspberryPi3-bin.tgz
     
-## Edit path in ~/.bashrc
+### Edit path in ~/.bashrc
     LD_LIBRARY_PATH=/usr/local/Qt5.11.2/lib
     PATH=/usr/local/Qt5.11.2/bin
     
