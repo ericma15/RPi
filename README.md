@@ -1,9 +1,20 @@
 # RPi Rasbian strech Qt5.11.2 install
 
->install QT: https://github.com/tranter/raspberry-pi-qt-builds
+>Reference: https://github.com/tranter/raspberry-pi-qt-builds
 
+### Check version 
+**pi@rpi3Bplus:~ $ uname -a** (after sudo rpi-update)
+    Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
 
-### Download and install Qt5.11.2 (minimum)
+**pi@rpi3Bplus:~ $ lsb_release -a** (after sudo apt update/upgrade)
+    Distributor ID:	Raspbian
+    Description:	Raspbian GNU/Linux 9.4 (stretch)
+    Release:	9.4
+    Codename:	stretch
+    
+    
+
+### Download and install prebuild Qt5.11.2 (minimum)
     cd ~
     wget https://github.com/tranter/raspberry-pi-qt-builds/releases/download/v0.3-beta/Qt5.11.2-RaspberryPi3-bin-minimal.tgz
     wget https://github.com/tranter/raspberry-pi-qt-builds/releases/download/v0.3-beta/QtCreator4.7.2-Qt5.11.2-RaspberryPi3-bin.tgz
@@ -21,36 +32,6 @@
          
          
 
-### Change RPi's swapfile size
-
-$ sudo nano etc/dphys–swapfile; edit CONF_SWAPSIZE variable (change 100MB to 1024MB):
-    
-    ...
-    # CONF_SWAPSIZE=100
-    CONF_SWAPSIZE=1024
-    
-Restart new swap space and check memory:
-
-    $ sudo /etc/init.d/dphys-swapfile stop
-    $ sudo /etc/init.d/dphys-swapfile start
-    $ free -m
-    pi@raspberrypi:~ $ free -m
-                  total        used        free      shared  buff/cache   available
-    Mem:            927         228         269          34         429         643
-    Swap:          1023           0        1023
-    
-
-### Check version
-**pi@rpi3Bplus:~ $ uname -a**
-
-    Linux rpi3Bplus 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
-
-**pi@rpi3Bplus:~ $ lsb_release -a**
-
-    Distributor ID:	Raspbian
-    Description:	Raspbian GNU/Linux 9.4 (stretch)
-    Release:	9.4
-    Codename:	stretch
 
 
 ### To download Qt5 doc and exampes:
