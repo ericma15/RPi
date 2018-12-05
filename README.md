@@ -17,13 +17,13 @@
 
     
 
-### Download and install prebuild Qt5.11.2 (full)
+### Download and install prebuild Qt5.11.2 (minimum)
     cd ~
-    wget https://github.com/tranter/raspberry-pi-qt-builds/releases/download/v0.3-beta/Qt5.11.2-RaspberryPi3-bin-full.tgz
+    wget https://github.com/tranter/raspberry-pi-qt-builds/releases/download/v0.3-beta/Qt5.11.2-RaspberryPi3-bin-minimum.tgz
     wget https://github.com/tranter/raspberry-pi-qt-builds/releases/download/v0.3-beta/QtCreator4.7.2-Qt5.11.2-RaspberryPi3-bin.tgz
 
     cd /
-    sudo tar xvf /home/pi/Qt5.11.2-RaspberryPi3-bin-full.tgz
+    sudo tar xvf /home/pi/Qt5.11.2-RaspberryPi3-bin-minimum.tgz
     sudo tar xvf /home/pi/QtCreator4.7.2-Qt5.11.2-RaspberryPi3-bin.tgz
     
 ### Edit path in ~/.bashrc
